@@ -1,0 +1,632 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>EiStudy</title>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta name="keywords" content="Template, html, premium, themeforest" />
+  <meta name="description" content="EiStudy - 您的自助留学设计师" />
+  <meta name="author" content="LZ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- GOOGLE FONTS 
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css' />
+  <!-- /GOOGLE FONTS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="css/icomoon.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/mystyles.css" />
+  <script src="js/modernizr.js"></script>
+  <link rel="stylesheet" href="css/switcher.css" />
+  
+</head>
+<body>
+  
+<div class="globals-wrap">
+  <!--左边弹出栏-->
+  <div class="demo_changer" id="demo_changer">
+    <div class="demo-icon"> <i class="fa fa-phone" title="在线咨询"></i>
+    </div>
+    <div class="form_holder">
+      
+      <p>客服热线</p>
+      <div class="predefined_styles" id="styleswitch_area">
+        <h6 style="color:black">中国：400-7160816</h6>
+        <h6 style="color:black">新加坡：0065-67379958</h6>
+      </div>
+      <div class="line"></div>
+      <p>微信公众号</p>
+      <div class="predefined_styles">
+        <img src="img/QRcode.jpg"/>
+      </div>
+      <div class="line"></div>
+      <p>在线咨询</p>
+      <div class="predefined_styles" id="patternswitch_area">
+		
+      </div>
+     
+	   
+    </div>
+  </div>
+ <!--搜索栏---->
+  <div class="search-aside" id="search-aside">
+    <div class="icon"> <i class="fa fa-search"></i>
+    </div>
+    <div class="form_holder">
+     <input  class="search-input" autocomplete="off" data-default="Search" type="text" id="edit-keys" name="keys"  size="20" maxlength="255" value="">			
+	 
+	</div>
+	<ul class="sb-dropdown" style="display:none;">
+		<li class="sb-filter"><i class="fa fa-filter" ></i>&nbsp筛选</li>
+		<hr>
+		<li>
+		<div class="radio radio-stroke">
+            <label>
+                <input class="i-radio" type="radio" name="mySmallRadioList" />搜索院校</label>
+        </div>
+		</li>
+		<li>
+		<div class="radio radio-stroke">
+            <label>
+                <input class="i-radio" type="radio" name="mySmallRadioList" />留学资讯</label>
+        </div>
+		</li>
+		<li>
+		<div class="radio radio-stroke">
+            <label>
+                <input class="i-radio" type="radio" name="mySmallRadioList" />留学攻略</label>
+        </div>
+		</li>
+		<li>
+		<div class="radio radio-stroke">
+            <label>
+                <input class="i-radio" type="radio" name="mySmallRadioList" />案例故事</label>
+        </div>
+		</li>
+	</ul>
+	<div class="search-suggest" style="display:none;">
+	<ul  >
+		<li >l返回数据1</li>
+		<li >l返回数据2</li>
+		<li>l不是有的人天生吃素的</li>
+		<li>l不是有的人天生吃素的</li>
+		<li>l2012是真的</li>
+		<li>l2012是假的</li>
+	</ul>
+	</div>
+	
+  </div>
+  <!--右边TOP按钮
+  <div class="top-btn">
+  <a id="nav-top" href="#banner" class="fa fa-chevron-up top-icon"></a>
+</div>
+-->
+<!--导航栏-->
+<header id="main-header" style="position:static;background:#f0694b">
+  <!--顶部栏-->
+  <!--<div class="header-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a class="logo" href="index.html">
+          <img src="img/logo-invert.png" alt="Image Alternative text" title="Image Title" />
+        </a>
+      </div>
+      <div class="col-md-9">
+        <div class="top-user-area clearfix">
+          <ul class="top-user-area-list list list-horizontal list-border">
+            <li class="top-user-area-avatar">
+              <a href="user-profile.html">
+                <img class="origin round" src="img/amaze_40x40.jpg" alt="Image Alternative text" title="AMaze" />
+                Hi, John
+              </a>
+            </li>
+            <li>
+              <a href="#">Sign Out</a>
+            </li>
+            <li class="nav-drop">
+              <a href="#">
+                USD $ <i class="fa fa-angle-down"></i>
+                <i class="fa fa-angle-up"></i>
+              </a>
+              <ul class="list nav-drop-menu">
+                <li>
+                  <a href="#">
+                    EUR
+                    <span class="right">€</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    GBP
+                    <span class="right">£</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    JPY
+                    <span class="right">円</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    CAD
+                    <span class="right">$</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    AUD
+                    <span class="right">A$</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="top-user-area-lang nav-drop">
+              <a href="#">
+                <img src="img/flags/32/uk.png" alt="Image Alternative text" title="Image Title" />
+                ENG
+                <i class="fa fa-angle-down"></i>
+                <i class="fa fa-angle-up"></i>
+              </a>
+              <ul class="list nav-drop-menu">
+                <li>
+                  <a title="German" href="#">
+                    <img src="img/flags/32/de.png" alt="Image Alternative text" title="Image Title" />
+                    <span class="right">GER</span>
+                  </a>
+                </li>
+                <li>
+                  <a title="Japanise" href="#">
+                    <img src="img/flags/32/jp.png" alt="Image Alternative text" title="Image Title" />
+                    <span class="right">JAP</span>
+                  </a>
+                </li>
+                <li>
+                  <a title="Italian" href="#">
+                    <img src="img/flags/32/it.png" alt="Image Alternative text" title="Image Title" />
+                    <span class="right">ITA</span>
+                  </a>
+                </li>
+                <li>
+                  <a title="French" href="#">
+                    <img src="img/flags/32/fr.png" alt="Image Alternative text" title="Image Title" />
+                    <span class="right">FRE</span>
+                  </a>
+                </li>
+                <li>
+                  <a title="Russian" href="#">
+                    <img src="img/flags/32/ru.png" alt="Image Alternative text" title="Image Title" />
+                    <span class="right">RUS</span>
+                  </a>
+                </li>
+                <li>
+                  <a title="Korean" href="#">
+                    <img src="img/flags/32/kr.png" alt="Image Alternative text" title="Image Title" />
+                    <span class="right">KOR</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+<!--导航栏-->
+<div class="container">
+  <div class="nav">
+    <!--logo-->
+    <div class="col-md-1" style="padding-left:0;">
+      <!--logo-->
+      <a class="logo" href="index.html">
+        <img src="img/logo-invert-2.png" alt="Image Alternative text" title="Image Title" />
+      </a>
+    </div>
+    <!--menu-->
+   
+    <!--user-->
+    
+  </div>
+</div>
+</header>
+
+<div class="container">
+	 <div class="container" style="padding-left:0;">
+			
+			
+            <div class="row mt40">
+                <div class="col-md-2" >
+                    <aside class="sidebar-left" style="overflow:hidden">
+						<h3 class="">关于我们</h3>
+						<div>
+							<ul class="nav  nav-stacked faqs-nav mb30">
+                            <li class="active"><a class="" href="#tab-1" data-toggle="tab">意腾简介 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+                            <li class=""><a class="" href="#tab-2" data-toggle="tab">意腾优势 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+							<li class=""><a class="" href="#tab-3" data-toggle="tab">意腾资质 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+                            <li class=""><a href="#tab-4"data-toggle="tab">合作证书 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+							<li class=""><a href="#tab-5"data-toggle="tab">联系方式 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+                            <li><a href="#tab-6"data-toggle="tab">友情链接 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+							<li><a href="#tab-7"data-toggle="tab">诚聘英才 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+							<li><a href="#tab-8"data-toggle="tab">市场合作 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+                             <li><a href="#tab-9"data-toggle="tab">网站声明 &nbsp&nbsp&nbsp <i class="fa fa-caret-right"></i></a>
+                            </li>
+                        </ul>
+						</div>
+                    </aside>
+                </div>
+                <div class="col-md-9">
+					  <div class="tab-content">
+                                <div class="tab-pane fade  in active" id="tab-1">
+                                   <div class="about-us-content text-indent">
+                                        <h4 class="h-divider">意腾简介 </h4>
+                                        <p>意腾留学——全球最专业的国际教育机构，公司总部位于具有“花园城市”之称的美丽国度——新加坡。公司全称“新加坡意腾国际控股有限公司（Ei Holdings Pte Ltd)”，是得到新加坡外交部及中国大使馆双重认证的资深留学机构，专业为客户提供留学咨询、入学代办、签证指导、后勤保障等国际教育咨询一条龙服务。</p>
+										<p>意腾留学，立足新加坡，放眼全球。公司业务范围覆盖美国、英国、加拿大、中国、澳大利亚、新西兰、韩国等四大洲多个国家，并在各个国家设立联络点，在中国更是成立了分公司——意腾涉外留学。意腾留学还与著名的国际性英语标准化水平测试之一雅思IELTS，英国文化协会british council达成长期教育战略合作伙伴。目前，公司已与全球2000多所院校达成合作，通过意腾全球资源，每年超过千名优秀的国际学生选择通过意腾留学提供的世界教育信息实现留学出国梦想，得到了各大院校及广大客户的一致好评。</p>
+										<p>意腾留学始终秉承“办最好质量，创最优服务”的发展理念，锐意进取，不断创新，致力于将意腾打造成为新时代留学行业的标杆，为全球客户铸就一条“顺畅、便捷”的留学通道。</p>
+										
+										<p>不管您在何时，不管您在何地——意腾始终与您相伴！</p>
+										
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade " id="tab-2">
+                                    <div  class="about-us-content text-indent">
+                                         <h4 class="h-divider">意腾优势 </h4>
+										 <h5 class="bold">品牌渊源</h5>
+                                        <p>EI holdings Pte Ltd，中文译名意腾国际新加坡控股集团有限公司(以下简称意腾国际)，是集留学、移民、房产、学生公寓为一身的国际化、专业化、现代化跨国咨询有限公司。总部位于新加坡，并建立了“从亚太地区扩延至全球”的战略架构，秉承了发展成全球化企业的宗旨。</p>
+										<p>意腾留学隶属于新加坡意腾控股有限公司(Ei Holdings Pte Ltd)旗下全资子公司，致力于推广全球国际教育机构之一。全称意腾涉外交流咨询有限公司，中国设有分公司，专业从事国际教育咨询服务，并且提供留学咨询，留学信息，留学办理的国际教育咨询公司。</p>
+										 <h5 class="bold">全球化战略部署：</h5>
+                                        <p>意腾国际创业伊始，便招募各国留学精英团队，致力于开拓全球合作伙伴。目前，公司业务领域、合作伙伴已经跨越包括中国、美国、英国、澳洲、加拿大、新西兰、新加坡等多个全球精英荟萃的国度，公司产品涉及教育服务事业、B2C电子商城事业、社交互动媒体事业、境外投资服务事业、互联网软件开发事业。</p>
+										 <h5 class="bold">意腾留学的特色产品:</h5>
+                                        <p>全面的网络服务。公司创立以来，自主研发了诸多网络品牌，包括意腾留学网www.eistudy.com 、意腾公寓网www.65house.com，并在此基础上开拓性地建立了留学、移民、房产、网上商城、广告等各子公司，其中EI的软件公司 、互联网开发公司与知名门户网站如百度、谷歌、腾讯、湖南教育网、出国在线、阿里巴巴、中国教育网、PConline、中国教育信息网、狮城论坛、马来西亚教育网、马来西亚佳礼论坛、美国教育网等建立长期战略合作伙伴关系，公司业务涉及面已覆盖全球。专业的教育投资规划。意腾留学的专家团队经过多年的努力，和中国、加拿大、澳大利亚、美国、英国、新西兰、新加坡等世界发达国家的上百所教育事业服务机构强强合作，为全球求学者在海外深造、定居提供全方位的贴心服务。</p>
+										<p>专业的教育投资规划。意腾留学的专家团队经过多年的努力，和中国、加拿大、澳大利亚、美国、英国、新西兰、新加坡等世界发达国家的上百所教育事业服务机构强强合作，为全球求学者在海外深造、定居提供全方位的贴心服务。</p>
+										<p>最效率：无论你身在哪个国家，意腾留学团队都能为您量身打造您的留学路线，并且在短期内成功办理。</p>
+										<p>最权威：长期从事出国专家全面辅导，以亲历者身份言传身教。</p>
+										<p>最超值：公司开设名校考察、境外服务等额外价值，有多个子公司提供保障。</p>
+										<p>最安全：公司签署承诺书，诚信为本，品质保证。</p>
+										<p>最专业：业务涉及广泛细节，海外生活安心无忧，如学校实地考察，提供强劲的现场咨询。</p>
+										<p>最贴心：留学规划、移民投资、购房咨询、生活指导、专业分析的全程服务。</p>
+										<p>最全面：出国前出国后都可以办理新加坡的升学、住宿 、生活、转学等各种学业问题。</p>
+										 <h5 class="bold">意腾留学的服务理念</h5>
+                                        <p>无论您来自哪个国家，无论您就读哪个学校，意腾留学都能“服务周到，注重细节”、“办最好质量，用合理费用”是意腾留学的首要服务理念。在此基础上，通过“申请快捷，成功率高”、“量体裁衣，方案个性”、“ 申请方案弃陈出新”、“ 后续援手支持力大”等诸多优势使得公司成为行业里的代表。多年以来，公司始终客户的利益永远放在第一位，帮助每位客户办理最适合自己的方案，严谨务实的一站式服务模式，使得公司取得了优质的口碑。</p>
+										<p>优质服务需要技术跟进。意腾留学成立网络子公司，在专业技术方面，采用最新开发的OA系统、CRM系统、网络科技及先进的办公设备、视频设施、先进的电话机交换系统、通讯终端和高效稳定的局域网络环境保证了集团各项决策的及时性、系统性和科学性，无论意腾人身处何地，都能渗透到每个角落为顾客服务。</p>
+										 <h5 class="bold">意腾留学的目标</h5>
+                                        <p>十年可以树木，也可以发展一个好企业。意腾十年来一直兢兢业业，潜心研究最专业的服务，为顾客提供最便捷的桥梁途径。意腾也深谙“不积跬步，无以至千里”之道，对每一位客户都倾其所能，保证其实现各自的愿景。未来，意腾留学将继续发扬“服务至上”的理念，背负起社会使命，为客户提供最有力的保障，您的满意是我们最大的动力!</p>
+										<p>以一流的专业队伍为诺，实现出国梦近在咫尺。意腾留学非常重视与您的沟通，也非常高兴热城为您服务，无论出国留学还是移民创业、居家迁移，第一站从意腾开始。</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-3">
+                                    <div class="about-us-content">
+                                       <div class="row row-no-gutter">
+											<div class="col-md-4">
+												<a class="hover-img popup-image" href="img/certificate/syjzcz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/syjzcz.jpg"  title="新加坡商业局认证">
+													<h5 class="hover-title-center">新加坡商业局认证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-image" href="img/certificate/chinadbzz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/chinadbzz.jpg" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO lobby">
+													<h5 class="hover-title-center">中国工商局认证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-image" href="img/certificate/20140418020232927.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/20140418020232927.jpg" alt="Image Alternative text" title="hotel 2">
+													<h5 class="hover-title-center">中国工商局认证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-image" href="img/certificate/lhxyzm.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/lhxyzm.jpg" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite">
+													<h5 class="hover-title-center">新加坡商业局良好信誉证书</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-image" href="img/certificate/zxdsgrz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/zxdsgrz.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library"><h5 class="hover-title-center">中国驻新加坡大使馆认证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-image" href="img/certificate/zzjgdmz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/zzjgdmz.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library"><h5 class="hover-title-center">组织机构代码证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-image" href="img/certificate/chinadbzz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/chinadbzz.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library"><h5 class="hover-title-center">中国代表证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+                                            <a class="hover-img popup-image" href="img/certificate/zxdsgrz.jpg" data-effect="mfp-zoom-out">
+                                                <img src="img/certificate/zxdsgrz.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library"><h5 class="hover-title-center">新加坡外交部认证</h5>
+                                            </a>
+                                        </div>
+										</div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade " id="tab-4">
+                                    <div class="about-us-content">
+                                       <div class="row row-no-gutter" id="popup-gallery">
+											<div class="col-md-4">
+												<a class="hover-img popup-gallery-image" href="img/certificate/syjzcz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/syjzcz.jpg"  title="新加坡商业局认证">
+													<h5 class="hover-title-center">新加坡商业局认证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-gallery-image" href="img/certificate/chinadbzz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/chinadbzz.jpg" alt="Image Alternative text" title="LHOTEL PORTO BAY SAO PAULO lobby">
+													<h5 class="hover-title-center">中国工商局认证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-gallery-image" href="img/certificate/20140418020232927.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/20140418020232927.jpg" alt="Image Alternative text" title="hotel 2">
+													<h5 class="hover-title-center">中国工商局认证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-gallery-image" href="img/certificate/lhxyzm.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/lhxyzm.jpg" alt="Image Alternative text" title="hotel THE CLIFF BAY spa suite">
+													<h5 class="hover-title-center">新加坡商业局良好信誉证书</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-gallery-image" href="img/certificate/zxdsgrz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/zxdsgrz.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library"><h5 class="hover-title-center">中国驻新加坡大使馆认证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-gallery-image" href="img/certificate/zzjgdmz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/zzjgdmz.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library"><h5 class="hover-title-center">组织机构代码证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+												<a class="hover-img popup-gallery-image" href="img/certificate/chinadbzz.jpg" data-effect="mfp-zoom-out">
+													<img src="img/certificate/chinadbzz.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library"><h5 class="hover-title-center">中国代表证</h5>
+												</a>
+											</div>
+											<div class="col-md-4">
+                                            <a class="hover-img popup-gallery-image" href="img/certificate/zxdsgrz.jpg" data-effect="mfp-zoom-out">
+                                                <img src="img/certificate/zxdsgrz.jpg" alt="Image Alternative text" title="hotel PORTO BAY SERRA GOLF library"><h5 class="hover-title-center">新加坡外交部认证</h5>
+                                            </a>
+                                        </div>
+										</div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-5">
+                                   <div class="about-us-contact">
+                                        <h4 class="h-divider">联系方式 </h4>
+										<h5 class="bold">联系电话</h5>
+                                        <p>新加坡：0065-6737 9958</p>
+                                        <p>中国：400 - 716 0816</p>
+										<p>澳洲：61 - 02 8006 0559</p>
+                                        <p>美国：1 - 347 410 9588</p>
+										<p>英国：44 - 020 3286 8589</p>
+										<h5 class="bold mt40">总公司地址</h5>
+                                        <p>新加坡地址：8 Burn Road # 10-16 Trivex Singapore 369977 Tai Seng MRT 大成地铁站A出口</p>
+                                        <h5 class="bold mt40">中国分公司</h5>
+                                        <p>华南总公司：广东省广州市天河区林乐路中旅商务大厦13层C2</p>
+										 <h5 class="bold mt40">电子邮箱</h5>
+                                        <p>admin@eistudy.com(中英邮件)</p>
+										<h5 class="bold mt40">微信公众号</h5>
+                                        <div><img src="img/QRcode.jpg"></div>
+										 <h5 class="bold mt40">在线客服联系</h5>
+                                        <a class="btn btn-primary mb50">在线咨询</a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-6">
+                                  <div class="about-us-content">
+                                        <h4 class="h-divider">友情链接 </h4>
+                                        <p>欢迎将新加坡留学网添加为友情链接</p>
+										<p>本站友情链接要求：</p>
+										<p>1.百度权重>=2</p>
+										<p>2.快照隔天</p>
+										<p>3.导出链接小于50个</p>
+										<p>4.首页不换二级域名和目录</p>
+										<p>联系QQ:315656760</p>
+										
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tab-7">
+                                    <div class="about-us-content">
+                                         <h4 class="h-divider">诚聘英才 </h4>
+										 
+                                        <p class="bold">咨询顾问</p>
+										<p>工作地点：新加坡/广州</p>
+										<p>岗位职责：</p>
+										<p>1、负责接听客户来电、回答网络客户提出的问题，进行简单的院校指导。</p>
+										<p>2、负责跟踪CRM指派的客户，了解客户留学所需要的相关背景情况。</p>
+										<p>3、接待客户面访、进行深度院校服务。</p>
+										<p>4、根据客户情况和境外院校招生标准为客户设计切实可行的留学方案;</p>
+										<p>5、协助客户准备留学材料;</p>
+										<p>6、负责客户回访工作,了解客户的满意程度,对于客户的意见或建议及时反馈。</p>
+										
+										<p>岗位要求：</p>
+										<p>1、本科及以上学历,英文6级以上,有留学背景优先考虑。</p>
+										<p>2、具备留学咨询行业工作经验优先考虑。</p>
+										<p>3、性格外向、善于与人沟通。</p>
+										<p>4、勤奋，自信，对工作热情，责任心强。</p>
+										
+										
+										 <p class="bold">网站编辑</p>
+										<p>工作地点：广州</p>
+										<p>岗位职责：</p>
+										<p>1、负责公司网站每日新闻，重点推荐位内容选择和发布，提升网站流量，确保内容品质</p>
+										<p>2、管理兼职编辑，检查兼职工作质量，计发兼职稿酬;</p>
+										<p>3、负责网页专题内容撰写和策划，与网页设计师进行版面设计。</p>
+										<p>4、负责微信、微博等互动平台内容编辑;</p>
+										<p>5、负责论坛帖子维护和用户管理;</p>
+										
+										<p>岗位要求：</p>
+										<p>1、本科及以上学历,新闻或相关专业。</p>
+										<p>2、具备留学媒体类经验优先。</p>
+										<p>3、文字驾驭能力强，同时擅长硬新闻、软文稿件的写作；</p>
+										<p>4、勤奋，对工作热情，责任心强。</p>
+										
+										
+										 <p class="bold">高级网页设计师</p>
+										<p>工作地点：广州</p>
+										<p>岗位职责：</p>
+										<p>1、主要负责公司网站整站设计及专题页面设计;</p>
+										<p>2、负责公司业务相关的部分平面设计;</p>
+										<p>3、配合其他部门主题活动和营销推广的页面设计。</p>
+										
+										
+										<p>岗位要求：</p>
+										<p>1、熟练掌握Photoshop,Illustrator,Fireworks,Flash,Dreamweaver等设计软件;</p>
+										<p>2、精通HTML语言,熟练手写DIV+CSS构建兼容不同浏览器优先考虑;</p>
+										<p>3、有过两年以上网站设计、平面设计的工作经验(学历不限),有在门户/电子商务公司工作经验者优先;</p>
+										<p>4、有出色的视觉创作能力,较强的沟通、协调、理解能力;</p>
+										<p>备 注:请提供作品网址,或将作品(网页或平面设计)发邮件至公司信箱hr@eistudy.com</p>
+										<p></p>
+                                    </div>
+                                </div>
+								<div class="tab-pane fade" id="tab-8">
+                                    <div class="about-us-content">
+                                        <h4 class="h-divider">市场合作 </h4>
+                                        <p>意腾留学eistudy.com 是国际教育行业的推广先驱,每月的用户单次访问量超过30万人次,为世界各地的留学生提供最新、最全的全球教育行业信息,是了解国际教育的第一窗口,通过意腾留学,您可立即获得世界各地各个院校的概述、照片、课程信息、学费等。</p>
+										<p>意腾留学隶属于新加坡意腾控股有限公司(Ei Holdings Pte Ltd)旗下全资子公司，总部位于新加坡，中国设有分公司，专业从事国际教育咨询服务，并且提供留学咨询，留学信息，留学办理的国际教育咨询公司。自成立以来,上百家教育提供商都从我们推行的战略合作运营模式中获得了收益。这一运营模式能够让各个留学中介 - 无论是独立式中介还是合作分销式中介 - 通过互联网的使用来增加中介的曝光率,提高中介的客户咨询率从而提高营业收入。</p>
+										<p>本公司留学服务: 从院校咨询,申请,签证申请至入境安排,全程教育咨询,留学指导及代理,接机和安排住宿留学咨询;教育计划设定;代订机票;行前指导;后期跟踪;翻译。</p>
+										<p>为了能更加扩大市场份额,抢占市场,提高公司的整合优势。因此,我们非常欢迎全国各地相关的机构与我们携手共进,共享优势资源,以达到双赢的真诚合作! 公司会给您最优惠的条件和广阔的发展空间,衷心希望与您合作成功,具体情况如下:</p>
+										<p>一、合作目的: 总部通过长期有效的探索和运营,已经形成了成熟的机制和模式;在经过总部的培训后,每位合作伙伴都将成为当地教育市场和网络市场的运作精英。</p>
+										<p>二、合作基础: 新加坡留学网是面向新加坡教育行业的网站,是在从事一项造福社会同时获取合理、合法收益的事业,所以要求合作伙伴要对教育培训事业具有高度认同感、奉献精神和执著心态。</p>
+										<p>三、中介合作模式:</p>
+										<p>1.合作公司必须为正规相关服务机构。</p>
+										<p>2.初步审核时请提供公司营业执照,以及我方的合作申请表格。</p>
+										<p>3.签订临时合作协议进入考核期,时间为3个月---半年</p>
+										<p>4.签订长期合作协议,我方将会为合作公司进行宣传推广。</p>
+										<p>四、院校合作模式: 院校合作方必须为通过新加坡最新EDU trust认证。</p>
+										<p>MR. IVAN YU 余先生</p>
+										<p>联系电话:+65 - 6737 9958</p>
+										<p>邮件地址:ivanyu@eistudy.com</p>
+                                    </div>
+                                </div>
+								<div class="tab-pane fade" id="tab-9">
+                                    <div class="about-us-content">
+                                        <h4 class="h-divider">网站声明 </h4>
+                                        <p class="bold">意腾留学法律声明</p>
+										<p>意腾留学（www.eistudy.com）是经过法定程序合法建立的网站。为了保障意腾留学不受他人的非法侵害，以及维护本网站与相关人员的合法权益，特此，意腾留学发表如下声明：</p>
+										<p>第一、网站所有网页及内容，包括但不限于文字报导、图表、图片、形象设计、商标、网页上的按钮、素材、照片、影像、录音片、影音片、产生网页的程序代码及其他构成这些网页内容的物体、文件及设计（以下所称内容及代表本网站中所有网页的内容），均受到中华人民共和国著作权法、商标法及其他法律和国际条约的保护。上述内容的所有权是属于本站版权所有。</p>
+										<p>如下侵权行为一经发现，本站将追究侵权者的全部法律责任：</p>
+										<p>1、如未经过本网站同意及授权，不得对本网站原创内容有擅自修改、复制、抄袭、贩卖、展示、公开、散布、链接或其他任何公开及商业目的的行为。</p>
+										<p>2、如未经过本网站同意，其他的网站或网络系统，亦不得使用本网站的内容，或将本网站的网页显示于该网站的网页内。</p>
+										<p>第二、任何用户传输或提交至本网站的内容，均视为拥有合法的知识产权，对于上述内容所引发的版权、署名权的异议、纠纷，本站不承担任何法律责任。其传输提交的内容亦与本网站立场无关，本网站不承担任何连带法律责任。</p>
+										<p>第三、对于网站转载的其它信息、图片或资料的版权所有者，若认为本网站选用不妥，恳请及时与本网站联系，本网站将立即予以删除，并妥善处理。</p>
+										<p>第四、当使用本网站服务时，您不可以进行如下行为，否则本网站有权进行相应处理：</p>
+										<p>1、粘贴或传播任何非法的，具威胁性的，诽谤性的，贬损的，报复的，亵渎的或任何其他法律禁止的信息，包括但不限于传播任何煽动性鼓励犯罪的，或违反公民义务或任何其他违反地方法规、国家法律、法规或国际法律、惯例或公约的内容；</p>
+										<p>2、粘贴或传播任何散布任何他人的私人事件，粘贴或传播带有病毒，或任何带有贬损或损害性特征的内容；</p>
+										<p>3、粘贴或传播任何可能侵害其他人财产权利的数据、图形或程序，包括以非法形式使用未经注册的版权文本、图形或程序，商业秘密及其他保密信息、商标、服务标识等；</p>
+										<p>4、在回复其他用户信息时，加入无关的广告内容；给其他用户发送大量广告；</p>
+										<p>5、以任何形式干扰本网站的其他用户。</p>
+										<p>第五、本网站对上述条款拥有修改和最终解释权。</p>
+										<p>法律顾问：吴梵弘</p>
+										<p>律师执业证号：13303201310837798</p>
+										<p>律师事务所：浙江和乐律师事务所</p>
+										
+                                    </div>
+                                </div>
+                            </div>
+                   
+                </div>
+				
+            </div>
+        </div>
+</div>
+<footer id="main-footer" style="background:#f0694b">
+
+  <div class="row row-wrap footer-container">
+    
+    <div class="container">
+	
+	<div class="row">
+	<div class="col-md-4" >
+      <h6>中国广东省广州市天河区林乐路中旅商务大厦13楼c2</h6>
+      <h6  style="color:#f0f0f0">热线：<span style="color:#ffe800">400-7160816</span></h6>
+      
+      <h6>
+        <a href="" style="color:#f0f0f0">gzassistant@eistudy.com</a>
+      </h6>
+
+    </div>
+	
+    <div class="col-md-4">
+		<h6>8 Burn Road # 10-16 Trivex Singapore 369977 Tai Seng MRT</h6>
+      
+      <h6  style="color:#f0f0f0">phone：<span style="color:#ffe800">0065-67379958</span></h6>
+      <h6>
+        <a href="" style="color:#f0f0f0">gzassistant@eistudy.com</a>
+      </h6>
+      
+    </div>
+    
+	<div class="col-md-4 text-center">
+	  <h4>联系我们</h4>
+      <a class="logo" href="index.html">
+        <img src="img/logo-invert-2.png" alt="Image Alternative text" title="Image Title" />
+      </a>
+      
+    </div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="col-md-7">
+			<ul class="list list-footer">
+				<li>
+				  <a href="#">关于我们</a>
+				</li>
+				<li>|</li>
+				<li>
+				  <a href="#">期刊杂志</a>
+				</li>
+				<li>|</li>
+				<li>
+				  <a href="#">加盟合作</a>
+				</li>
+				<li>|</li>
+				<li>
+				  <a href="#">宣传画册</a>
+				</li>
+			   
+			 </ul>
+		</div>
+	</div>
+  </div>
+</div>
+</footer>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/slimmenu.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrap-timepicker.js"></script>
+<script src="js/nicescroll.js"></script>
+<script src="js/dropit.js"></script>
+<script src="js/ionrangeslider.js"></script>
+<script src="js/icheck.js"></script>
+<script src="js/fotorama.js"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+-->
+<script src="js/typeahead.js"></script>
+<script src="js/card-payment.js"></script>
+<script src="js/magnific.js"></script>
+<script src="js/owl-carousel.js"></script>
+<script src="js/fitvids.js"></script>
+<script src="js/tweet.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/gridrotator.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/switcher.js"></script>
+</div>
+
+</body>
+</html>
