@@ -1,0 +1,196 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* gps */
+.gps{ z-index: 2; position: fixed; right: 20px; top: 50%; margin-top: -45px;}
+.gps li{ cursor: pointer; width: 10px; height: 10px; background: #ccc; border-radius: 50%; margin-bottom: 5px;}
+.gps li.current{ width: 20px; height: 20px; margin-left: -5px; }
+
+/* main */
+html,body{ width: 100%; height: 100%;}
+body{ overflow: hidden;}
+.main{ z-index: 1; width: 100%; height: 100%; position: absolute; left: 0; top: 0;}
+.main>div{overflow: hidden; width: 100%; height: 100%; position: relative;}
+.main>div:nth-of-type(1){
+	background: url(../images/screen1.png);
+    background-size: cover;
+    }
+.main>div:nth-of-type(2){ 
+	background: url(../images/screen2_bg.png);
+    background-size: cover;
+	}
+.main>div:nth-of-type(3){ background: #ce8114;}
+.main>div:nth-of-type(4){ background: #19ad93;}
+.main>div:nth-of-type(5){ background: #0f98c5;}
+.main>div:nth-of-type(6){ background: #19ad93;}
+.main>div:nth-of-type(7){ background: #0f98c5;}
+/* screen1 */
+.banner{	
+	width: 980px;
+    margin-left: -499px;
+    margin-top: -435px;
+    height: 400px;
+    background: url(../images/banner.png) no-repeat;
+}
+.phone{	
+	margin-left: -205px;
+    margin-top: 0px;
+    animation: msClock 1.2s linear infinite;
+}
+@keyframes msClock {
+  0%,90%,100% {
+    transform: rotate(0) scale(1);
+  }
+  20%,40% {
+    transform: rotate(-15deg) scale(1.1);
+  }
+  30%,50% {
+    transform: rotate(15deg) scale(1.1);
+  }
+}
+.tongdao{	
+	margin-left: -128px;
+    margin-top: 1px;
+}
+.ask{	
+    width: 710px;
+    height: 60px;
+    margin-left: -344px;
+    margin-top: 111px;
+}
+.ask_l{	
+    width: 263px;
+    height: 60px;
+    float: left;
+    margin-left: 72px;
+    background: #7d5106;
+    line-height: 60px;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.ask_l:hover{	
+    background: #fdcd0c;
+}
+.ask_r:hover{	
+    background: #fdcd0c;
+}
+.ask_r{	
+    width: 263px;
+    height: 60px;  
+    float: right;
+    background: #7d5106;
+    line-height: 60px;
+    font-size: 28px;
+    color:#fff;
+    border-radius:20px; 
+    cursor: pointer;
+    margin-right: 64px;
+    cursor: pointer;
+}
+.ask_r img{	
+	margin-left: 42px;
+    margin-top: 14px;
+    float: left;
+    margin-right: 10px;
+}
+.screen1_bottom{	
+    margin-left: -330px;
+    margin-top: 236px;
+}
+
+/* css提纯
+	1、每一屏下直接子级都会有过渡属性；
+	2、绝对定位，坐标都是50%；
+ */
+
+.main>div>*{ transition: all 2s; position: absolute; left: 50%; top: 50%;}
+/* screen2 */
+.screen2 aside{width: 428px; height: 498px; background: url(../images/shield.png) no-repeat; margin-left: -520px; margin-top: -250px;}
+.screen2 article{width: 635px; height: 309px; background: url(../images/p2.png); margin-left: -30px; margin-top: -155px;}
+
+.screen2.out aside{ opacity: 0.3; margin-left: -1000px; transform: rotate(180deg); }
+.screen2.out article{ opacity: 0.3; margin-left: 550px; }
+
+ /* screen3 */
+.screen3 p{width: 631px; height: 273px; background: url(../images/p3.png) no-repeat 0 -291px; margin-left: -615px; margin-top: -136px;}
+.screen3 .circle1{width: 445px; height: 447px; background: url(../images/p3.png) no-repeat -3px -606px; margin-left: 102px; margin-top: -223px; 
+animation: sport 4s linear infinite; 
+-webkit-animation: sport 4s linear infinite;
+-ms-animation: sport 4s linear infinite;
+-o-animation: sport 4s linear infinite;
+-moz-animation: sport 4s linear infinite;
+}
+@keyframes sport{	
+	0%{ transform: rotate(0deg)}
+	100%{ transform: rotate(360deg)}
+}
+@-webkit-keyframes sport{	
+	0%{ transform: rotate(0deg)}
+	100%{ transform: rotate(360deg)}
+}
+@-ms-keyframes sport{	
+	0%{ transform: rotate(0deg)}
+	100%{ transform: rotate(360deg)}
+}
+@-moz-keyframes sport{	
+	0%{ transform: rotate(0deg)}
+	100%{ transform: rotate(360deg)}
+}
+@-o-keyframes sport{	
+	0%{ transform: rotate(0deg)}
+	100%{ transform: rotate(360deg)}
+}
+
+.screen3 .circle2{width: 381px; height: 403px; background: url(../images/p3.png) no-repeat -474px -620px; margin-left: 134px; margin-top: -201px; animation: sport 6s linear infinite alternate;}
+.screen3 .circle3{width: 361px; height: 362px; background: url(../images/p3.png) no-repeat -882px -643px; margin-left: 145px; margin-top: -182px; animation: sport 8s linear infinite;}
+.screen3 .rocket{width: 203px; height: 203px; background: url(../images/p3.png) no-repeat -372px -21px; margin-left: 209px; margin-top: -113px;}
+
+.screen3.out .rocket{  margin-left: -1009px; margin-top: 1013px; }
+
+/* screen4 */
+.screen4 .top{
+	width: 632px;
+    height: 688px;
+    background: url(../images/screen3_c_1.png) no-repeat;
+    margin-left: -475px;
+    margin-top: -200px;
+	 }
+.screen4 p{
+    width: 981px;
+    height: 496px;
+    background: url(../images/screen3_c_2.png) no-repeat;
+    margin-left: -304px;
+    margin-top: -173px;	
+	 }
+
+.screen4.out .top{ opacity: 0.3; margin-left: -1300px; }
+.screen4.out .down{ height: 0; }
+.screen4.out p{ opacity: 0.3; margin-left: 800px; }
+
+/* screen5 */
+.screen5 p{width: 826px; height: 103px; background: url(../images/p5.png) no-repeat; margin-left: -413px; margin-top: -231px; }
+.screen5 div{width: 771px; height: 442px; background: url(../images/p5.png) no-repeat -29px -122px; margin-left: -383px; margin-top: -174px; }
+
+.screen5.out p{ opacity: 0.3; margin-top: -632px; transform: rotate(360deg) scale(2,2)}
+.screen5.out div{ opacity: 0.3; margin-top: -632px; transform: rotate(360deg) scale(2,2)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
